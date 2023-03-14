@@ -1,0 +1,227 @@
+:root {
+    --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    --headings: 'PT Sans', sans-serif;
+
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--headings);
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.container {
+    max-width: 1024px;
+    padding: 0 1rem;
+
+}
+
+/*header*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.header .container {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.logo--text {
+    font-size: var(--headings);
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.logo--bold {
+    font-weight: 700;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__link {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.nav--item:hover .nav__link {
+    color: white;
+    text-decoration: underline;
+}
+
+/*hero*/
+.hero {
+    position: relative;
+    background-image: url(https://images2.alphacoders.com/119/thumb-1920-1191759.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: color #00000061;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .container {
+    position: relative;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hero--tittle {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+/*articles*/
+.Blog{
+    padding: 50px 0;
+}
+.blog__tittle {
+    font-size: 2rem;
+}
+.blog__article {
+    padding: 25px 0;
+    
+}
+.blog__ {
+    padding: 2px;
+}
+.blog_name{
+    font-size: 1.5rem;
+
+}
+.blog__link {
+    font-family: var(--headings);
+    color: #000;
+    font-weight: 700;
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    background-color: #f6edd9
+    
+    
+}
+.image__parallax{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://source.unsplash.com/random/1920×1080/?pets);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.image__bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+
+}
+.adoptame {
+    font-family: var(--headings);
+    font-size: 4rem ;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.final {
+    display: flex;
+    justify-content: center;
+}
+.parrafo_adoptame {
+    padding: 10px;
+}
+.copy {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.footer--nav{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+
+}
+@media (min-width: 768px){
+.header .container {
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+}
+.blog__article{
+    display: flex;
+    align-items: center;
+}
